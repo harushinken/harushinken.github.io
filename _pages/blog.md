@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ブログ
+title: 記事
 description: 考えたこと、試したこと、日々のこと。
 permalink: /blog/
 nav: true

@@ -2,7 +2,7 @@ ja:
   html_lang: ja
   ui:
     home: ホーム
-    blog: ブログ
+    blog: 記事
     language: 表示言語
     current: 現在のページ
     footer: 好奇心を忘れず、少しずつ記録。
@@ -28,7 +28,7 @@ ja:
       title: ホーム
       description: 私のツリーハウスへようこそ。
     blog:
-      title: ブログ
+      title: 記事
       description: 考えたこと、試したこと、日々のこと。
     not_found:
       title: まだ何もないページに着いたようです。
@@ -51,7 +51,6 @@ ja:
     explore: どうぞ、ごゆっくり。
     recent: 最近書いたもの
     photo_button: 写真を見る
-    news_card: 研究や日々のこと、ツリーハウスの最近の更新。
     photo_card: 日常や旅の途中で出会った景色。
     profile_card: これまでの歩み、研究、そして好きなこと。
     quote:
@@ -59,6 +58,7 @@ ja:
       book: 『シッタルタ』
       credit: ヘルマン・ヘッセ · 三井光弥訳（1925）· 155頁
       source_url: https://dl.ndl.go.jp/pid/1716174/1/84
+    articles_card: 考えたことや気づいたことを、少し長い文章に。
   blog:
     lead: 毎回、答えがあるわけではありません。ただ、ひとつの考えを残しておきたい日もあります。
   project_entries:
@@ -69,7 +69,7 @@ ja:
       body: "このサイトは al-folio をもとにつくり、GitHub Pages で公開しています。
 
 
-        トップページは歓迎の場所に。近況は「近況」に、作品は「写真」に、長めの文章はブログにまとめています。Profile では、これまでの歩み、研究、つくったものを紹介しています。
+        トップページは歓迎の場所に。写真のページには作品を、記事のページには考えたことをまとめています。Profile では、これまでの歩みや研究、好きなことを紹介しています。
 
 
         内容が増えるにつれて、サイトも少しずつ育っていくはず。まずは記録を始めて、自分らしい形を見つけていきたいと思います。"
@@ -114,7 +114,7 @@ en:
   html_lang: en
   ui:
     home: Home
-    blog: Blog
+    blog: Articles
     language: Language
     current: Current page
     footer: Stay curious. Keep a little record.
@@ -140,7 +140,7 @@ en:
       title: Home
       description: Welcome to my treehouse.
     blog:
-      title: Blog
+      title: Articles
       description: Thoughts, experiments, and little things from everyday life.
     not_found:
       title: Looks like you’ve found a blank page.
@@ -164,7 +164,6 @@ en:
     explore: Take your time. Have a look around.
     recent: Recent writing
     photo_button: See my photography
-    news_card: Research, everyday moments, and the latest from the treehouse.
     photo_card: Scenes from everyday life and places along the way.
     profile_card: Background, research, and things I enjoy.
     quote:
@@ -175,6 +174,7 @@ en:
       book: Siddhartha
       credit: Hermann Hesse · G. Olesch et al., 2001 · “Govinda”
       source_url: https://www.gutenberg.org/files/2500/2500-h/2500-h.htm
+    articles_card: Ideas, reflections, and longer notes from the treehouse.
   blog:
     lead: Not every post has an answer. Sometimes, I just want to hold on to a thought.
   project_entries:
@@ -185,8 +185,8 @@ en:
       body: "This site is built with al-folio and hosted on GitHub Pages.
 
 
-        The home page is a welcome, News collects recent updates, Photography is for images, and the blog is for longer writing. Profile
-        brings together my background, research, and things I’ve made.
+        The home page is a welcome, Photography is for images, and Articles is for longer writing. Profile brings together my background,
+        research, and interests.
 
 
         The site will grow along with its contents. First, start keeping a record; then, gradually find a shape that feels right."
@@ -233,7 +233,7 @@ zh:
   html_lang: zh-CN
   ui:
     home: 首页
-    blog: 博客
+    blog: 文章
     language: 显示语言
     current: 当前页面
     footer: 保持好奇，慢慢记录。
@@ -259,7 +259,7 @@ zh:
       title: 首页
       description: 欢迎来到我的树屋。
     blog:
-      title: 博客
+      title: 文章
       description: 一些想法，一些实践，还有生活里的小事。
     not_found:
       title: 好像走到了空白的一页。
@@ -282,7 +282,6 @@ zh:
     explore: 慢慢逛，不着急。
     recent: 最近写了
     photo_button: 看看摄影作品
-    news_card: 研究、日常，还有树屋最近发生的新变化。
     photo_card: 日常和旅行中，让我停下脚步的风景。
     profile_card: 一路走来的经历、研究，以及喜欢的东西。
     quote:
@@ -290,6 +289,7 @@ zh:
       book: 《悉达多》
       credit: 赫尔曼·黑塞
       source_url: ""
+    articles_card: 想法、思考，以及想慢慢写下来的文章。
   blog:
     lead: 不一定每篇都有答案。有时，只是想把一个念头留下来。
   project_entries:
@@ -300,7 +300,7 @@ zh:
       body: "这个网站基于 al-folio 搭建，放在 GitHub Pages 上。
 
 
-        首页是欢迎页，“新鲜事”记录近况，“摄影作品”放照片，博客留给长一点的想法。Profile 则整理个人经历、研究和做过的事。
+        首页是欢迎页，“摄影作品”放照片，“文章”留给长一点的想法。Profile 则整理个人经历、研究和兴趣。
 
 
         网站也会随着内容慢慢生长。先开始记录，再慢慢找到自己的样子。"
