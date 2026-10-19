@@ -57,7 +57,7 @@ nav: false
 <section class="personal-section" aria-labelledby="writing-{{ locale }}">
   <div class="personal-section-heading"><h2 id="writing-{{ locale }}">{{ t.home.recent }}</h2><a href="{{ '/blog/' | relative_url }}">{{ t.ui.all_posts }}</a></div>
   {% for post in site.posts limit:3 %}
-  {% assign article = t.articles[post.translation_key] %}
+  {% assign article = post.translations[locale] %}
   <a class="personal-entry" href="{{ post.url | relative_url }}"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time><span>{{ article.title | default: post.title | escape }}</span><span aria-hidden="true">↗</span></a>
   {% else %}<p class="personal-muted">{{ t.ui.empty_posts }}</p>{% endfor %}
 </section>

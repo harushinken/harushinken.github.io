@@ -61,21 +61,6 @@ ja:
       source_url: https://dl.ndl.go.jp/pid/1716174/1/84
   blog:
     lead: 毎回、答えがあるわけではありません。ただ、ひとつの考えを残しておきたい日もあります。
-  articles:
-    beginning:
-      title: ここから、まずは一ページ
-      description: プロジェクトや考え、日々のことが、少しずつ育っていく場所に。
-      tag: 日々のメモ
-      body: "ようこそ。
-
-
-        この小さなサイトでやりたいことは、シンプルです。つくったものを記録し、まだ形になっていない考えにも、少しだけ居場所をつくること。
-
-
-        プロジェクトや作品の話もあれば、本を読んだあとの短い感想や、日常のなかで書き留めておきたくなった瞬間のこともあると思います。
-
-
-        まずはこの一ページから。あとは、少しずつ書いていきます。"
   project_entries:
     treehouse:
       title: この個人サイト
@@ -192,23 +177,6 @@ en:
       source_url: https://www.gutenberg.org/files/2500/2500-h/2500-h.htm
   blog:
     lead: Not every post has an answer. Sometimes, I just want to hold on to a thought.
-  articles:
-    beginning:
-      title: Starting here, with a single page
-      description: A place for projects, thoughts, and everyday moments to grow, little by little.
-      tag: Notes
-      body: "Welcome.
-
-
-        The idea behind this little site is simple: keep a record of things I’ve made, and leave some room for thoughts that haven’t quite
-        taken shape yet.
-
-
-        Some posts will be about projects and creations. Others might be a few words after finishing a book, or a moment from everyday life
-        that felt worth writing down.
-
-
-        For now, I’m starting with this one page. More words will follow, little by little."
   project_entries:
     treehouse:
       title: This personal website
@@ -324,21 +292,6 @@ zh:
       source_url: ""
   blog:
     lead: 不一定每篇都有答案。有时，只是想把一个念头留下来。
-  articles:
-    beginning:
-      title: 这里，从一页开始
-      description: 给项目、想法和日常，留一个可以慢慢生长的地方。
-      tag: 随记
-      body: "欢迎来到这里。
-
-
-        这个小站想做的事情很简单：记录做过的事，也给还没成形的想法留一点空间。
-
-
-        有些内容会是项目和作品，有些可能是读完一本书后的几句话，也可能只是日常里一个值得记下的瞬间。
-
-
-        先从这一页开始，之后慢慢写。"
   project_entries:
     treehouse:
       title: 这个个人主页

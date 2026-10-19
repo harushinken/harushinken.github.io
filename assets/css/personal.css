@@ -98,6 +98,31 @@ body .post-header {
   overflow-wrap: anywhere;
 }
 
+.personal-article-body h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  line-height: 1.6;
+}
+
+.personal-article-body h3 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.personal-article-body p {
+  margin-bottom: 1.3rem;
+}
+
+.personal-article-body li {
+  margin-bottom: 0.9rem;
+}
+
+.personal-article-back {
+  margin: 3rem 0;
+}
+
 .personal-role {
   color: var(--personal-accent);
   font-size: 0.95rem;

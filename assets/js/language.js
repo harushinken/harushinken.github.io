@@ -10,8 +10,11 @@
   const storageKey = "treehouse-language";
   const pageKey = control.dataset.treehousePage;
   const siteName = "Jinqian Zhang";
+  const articleSource = document.getElementById("treehouse-article");
+  const articleTranslations = articleSource ? JSON.parse(articleSource.textContent) : null;
 
-  function pageMetadata(dictionary) {
+  function pageMetadata(dictionary, language) {
+    if (pageKey === "article") return articleTranslations?.[language];
     const [group, entry] = pageKey.split(":");
     return entry ? dictionary[group]?.[entry] : dictionary.pages[pageKey];
   }
@@ -66,7 +69,7 @@
       if (text) element.textContent = text;
     });
 
-    const metadata = pageMetadata(dictionary);
+    const metadata = pageMetadata(dictionary, language);
     if (metadata) {
       // The theme's page heading sits outside the three translated content panels.
       const heading = document.querySelector(".post > .post-header");
@@ -79,6 +82,8 @@
       document.title = `${metadata.title} · ${siteName}`;
       const description = document.querySelector('meta[name="description"]');
       if (description) description.content = metadata.description;
+      const articleTag = document.querySelector("[data-article-tag]");
+      if (articleTag) articleTag.textContent = metadata.tag ? `#${metadata.tag}` : "";
     }
 
     translateNavigation(dictionary);

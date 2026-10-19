@@ -29,7 +29,7 @@ pagination:
 {% if paginator %}{% assign entries = paginator.posts %}{% else %}{% assign entries = site.posts %}{% endif %}
 <div class="personal-writing-list">
   {% for post in entries %}
-  {% assign article = t.articles[post.translation_key] %}
+  {% assign article = post.translations[locale] %}
   <article class="personal-writing">
     <div class="personal-writing-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time>{% if article.tag %}<span>#{{ article.tag | escape }}</span>{% endif %}</div>
     <h2><a href="{{ post.url | relative_url }}">{{ article.title | default: post.title | escape }}</a></h2>

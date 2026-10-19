@@ -8,7 +8,8 @@ Profile 包含个人经历、研究、论文和技能兴趣。原 `/cv/`、`/pro
 
 ## 内容放在哪里
 
-所有三语文案集中在 `_data/treehouse.yml`，顶层依次是 `ja`、`en`、`zh`。
+界面、个人介绍和项目文案在 `_data/treehouse.yml`，顶层依次是 `ja`、`en`、`zh`。
+博客文章独立放在 `_posts/`：一篇文章一个 Markdown 文件，三语标题、摘要、标签和正文全部保存在该文件中。
 三个语言节点的结构相同：
 
 - `ui`：导航、按钮、页脚等共用文字。
@@ -16,7 +17,6 @@ Profile 包含个人经历、研究、论文和技能兴趣。原 `/cv/`、`/pro
 - `home`：首页介绍、卡片和“欢迎来到我的树屋”。
 - `profile`：个人介绍、当前研究和技能兴趣的三语说明。
 - `news` / `photos`：新鲜事、摄影作品页面的三语界面文字。
-- `articles`：博客文章，含标题、摘要、标签和正文。
 - `project_entries`：项目，含标题、摘要、类别和正文。
 
 先修改中文 `zh` 下的内容，再补齐同名日英字段即可。三语应表达同一份内容。
@@ -27,63 +27,61 @@ Profile 包含个人经历、研究、论文和技能兴趣。原 `/cv/`、`/pro
 首页“打个招呼”区块已删除；以后可以再添加真实联系方式。
 博士身份说明只显示在 Profile。首页照片下方放置《悉达多》引文，译本出处见 [引文来源说明](QUOTE-SOURCES.md)。
 
-## 写一篇博客
+## 写一篇博客：一篇文章一个文件
 
-最方便的方式：把中文稿交给助手，补齐日语、英语并添加到网站。
-自己编辑时，按下面两步操作。
+不需要再修改 `_data/treehouse.yml`。新增文章只需要新增一个 `_posts/日期-英文短名.md` 文件。
 
-### 1. 添加三语正文
+1. 复制 [三语文章模板](templates/article.md)，或复制已有文章。
+2. 文件名改为实际发布日期和英文短名，例如 `_posts/2026-10-20-a-new-idea.md`。
+3. 修改顶部 `date`、日文 `title` / `description`，以及 `translations` 中三语标题、摘要和标签。
+4. 在文件下方 `capture article_zh`、`capture article_ja`、`capture article_en` 之间分别填写中文、日文、英文 Markdown 正文。中文区块放在最前面，方便起草和修改。
+5. 保留语言按钮、脚本和渲染部分，提交文件即可。
 
-在 `_data/treehouse.yml` 的 `ja.articles`、`en.articles`、`zh.articles` 下分别新增同一个键，例如 `a-new-note`。
-中文版本可以这样写，日英版本使用相同结构和对应译文：
-
-```yaml
-articles:
-  a-new-note:
-    title: 今天想记下的一件事
-    description: 用一句话介绍这篇文章。
-    tag: 随记
-    body: |
-      这里开始写正文。
-
-      ## 一个小标题
-
-      继续写你的想法。
-```
-
-注意：在原有 `articles` 节点下追加文章，不要重复创建顶层 `articles` 键。
-
-### 2. 注册文章
-
-复制 `_posts/2026-10-19-a-small-beginning.md`，修改文件名为实际日期和英文短名。
-保留语言按钮、翻译数据和渲染循环，只修改文件顶部：
+文件的顶部信息示例：
 
 ```yaml
 ---
 layout: page
-title: 記事の日本語タイトル
-description: 記事の日本語の概要。
-translation_key: a-new-note
+title: 日本語のタイトル
+description: 日本語の概要。
 date: 2026-10-20 09:00:00 +0900
 related_posts: false
+translations:
+  ja:
+    title: 日本語のタイトル
+    description: 日本語の概要。
+    tag: 考察
+  en:
+    title: An English title
+    description: A short description.
+    tag: Ideas
+  zh:
+    title: 中文标题
+    description: 用一句话介绍这篇文章。
+    tag: 想法
 ---
 ```
 
-`translation_key` 必须和三语正文的键一致。
-顶部日文标题与摘要用于初次加载、无 JavaScript 浏览和 RSS 元数据，需与 `ja` 下的译文一致。
-日期请使用实际发布日期。未来日期的文章默认暂不显示，定时发布还需要届时触发一次部署。
+正文是普通 Markdown，可以写段落、小标题、列表和链接。文章标题由页面自动显示，正文从副标题或首段开始，不必再写一个 `# 标题`。
+顶部日文标题与摘要用于初次加载和 RSS 元数据，需与 `translations.ja` 一致。
+文件名日期和 `date` 字段请使用实际发布日期；未来日期文章默认暂不显示，定时发布需要届时再触发一次部署。
 
-## 添加图片
+第一篇正式文章：[我们是否正在创造一种全新的智慧？](../_posts/2026-10-19-alien-intelligence.md)。
+已有的开站小记也已迁移；它的原有网址保持不变。
 
-把图片上传到 `assets/img/blog/`，在三语正文中使用同一图片路径，各自翻译图片说明：
+### 添加图片
+
+上传到 `assets/img/blog/` 后，在正文中引用：
 
 ```markdown
 ![用一句话描述图片](/assets/img/blog/my-photo.jpg)
 ```
 
-此站点发布在域名根路径，所以直接使用 `/assets/` 开头的路径。
-正文数据不会再次执行 Liquid，因此不要在 `body` 中放 `{{ ... }}` 或 `{% ... %}`。
-不准备公开的草稿先保存在网站仓库以外；仅隐藏语言区块不会隐藏源代码里的内容。
+同一图片可以在三语正文中共用，只翻译图片说明。
+正文会经过 Liquid 处理；如果要展示 Liquid 代码本身，请使用 Jekyll 的 `raw` / `endraw` 转义，避免被当作模板执行。
+
+如果只是先起草中文，可以先在本地保留草稿，之后让助手补齐日英版本再发布。
+三种语言的正文都在公开 HTML 中，隐藏语言区块不表示私密存储。
 
 ## 增加项目
 
