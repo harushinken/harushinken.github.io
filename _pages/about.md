@@ -47,6 +47,13 @@ nav: false
     <a class="personal-card" href="{{ '/profile/' | relative_url }}"><span class="personal-number">03 / PROFILE</span><h3>Profile ↗</h3><p>{{ t.home.profile_card }}</p></a>
   </div>
 </section>
+<section class="personal-section" aria-labelledby="news-{{ locale }}">
+  <div class="personal-section-heading"><h2 id="news-{{ locale }}">{{ t.news.recent }}</h2><a href="{{ '/news/' | relative_url }}">{{ t.news.all }}</a></div>
+  {% assign updates = site.data.news.items | sort: 'date' | reverse %}
+  {% for item in updates limit:3 %}
+  <a class="personal-entry" href="{{ '/news/' | relative_url }}#update-{{ locale }}-{{ forloop.index }}"><time datetime="{{ item.date }}">{{ item.date | date: '%Y.%m.%d' }}</time><span>{{ item.body[locale] | default: item.title[locale] | escape }}</span><span aria-hidden="true">↗</span></a>
+  {% else %}<p class="personal-muted">{{ t.news.empty }}</p>{% endfor %}
+</section>
 <section class="personal-section" aria-labelledby="writing-{{ locale }}">
   <div class="personal-section-heading"><h2 id="writing-{{ locale }}">{{ t.home.recent }}</h2><a href="{{ '/blog/' | relative_url }}">{{ t.ui.all_posts }}</a></div>
   {% for post in site.posts limit:3 %}
