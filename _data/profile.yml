@@ -1,0 +1,50 @@
+name: Jinqian Zhang
+status: PhD candidate in Information Science
+education:
+  - period: 2024.04–present
+    institution: Japan Advanced Institute of Science and Technology (JAIST)
+    location: Japan
+    school: Graduate School of Advanced Science and Technology
+    program: Division of Advanced Science and Technology
+    degree: PhD studies in Information Science
+    lab: Social Signal and Multimodal Interaction Laboratory (Okada Laboratory)
+    lab_url: https://www.jaist.ac.jp/laboratory/aiw/okada.html
+  - period: 2022.04–2024.03
+    institution: Japan Advanced Institute of Science and Technology (JAIST)
+    location: Japan
+    school: Graduate School of Advanced Science and Technology
+    program: Division of Advanced Science and Technology
+    degree: Master of Science in Information Science
+    lab: Social Signal and Multimodal Interaction Laboratory (Okada Laboratory)
+    lab_url: https://www.jaist.ac.jp/laboratory/aiw/okada.html
+  - period: 2020.12–2022.03
+    institution: Sun-A International Academy
+    location: Shin-Koiwa, Tokyo, Japan
+    degree: Japanese language studies
+  - period: 2016.09–2020.06
+    institution: Northeastern University
+    location: Shenyang, Liaoning, China
+    school: School of Computer Science and Engineering
+    degree: Bachelor’s degree in Computer Science and Technology
+research_interests:
+  - Multimodal Interaction
+  - Multimodal Machine Learning
+  - Explainable Machine Learning
+  - Human Behavior Computing
+publications:
+  - status: Published
+    venue: HAI ’25
+    citation: Jinqian Zhang, Sixia Li, Candy Olivia Mawalim, and Shogo Okada. 2026. Multimodal Classification of Co-speech Gesture Pragmatic
+      Function in Storytelling. In Proceedings of the 13th International Conference on Human-Agent Interaction (HAI '25). Association for Computing
+      Machinery, New York, NY, USA, 312–320.
+    doi: https://doi.org/10.1145/3765766.3765771
+  - status: Published
+    venue: ICMI ’26
+    citation: "Jinqian Zhang, Sixia Li, Candy Olivia Mawalim, and Shogo Okada. 2026. From Detection to Mechanism Analysis: Interpretable Multimodal
+      Concept Interactions in Gesture Pragmatics. In Proceedings of the 28th International Conference On Multimodal Interaction (ICMI '26).
+      Association for Computing Machinery, New York, NY, USA, 705–714."
+    doi: https://doi.org/10.1145/3776574.3831183
+  - status: Submitted
+    venue: Journal submission
+    citation: Jinqian Zhang, Sixia Li, Candy Olivia Mawalim, and Shogo Okada. 2026. Pragmatic-function composition is selectively associated
+      with perceived confidence and fluency in storytelling. Submitted to a journal.

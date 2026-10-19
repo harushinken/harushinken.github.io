@@ -1,0 +1,11 @@
+items:
+  - date: "2026-10-19"
+    title:
+      ja: ツリーハウスを、少し模様替え。
+      en: A few changes around the treehouse.
+      zh: 树屋，添了几个新角落。
+    body:
+      ja: 三言語で読める Profile と写真のページ、そして近況の欄を用意しました。これから少しずつ、中身を増やしていきます。
+      en: The treehouse now has a trilingual Profile, a photography page, and a place for updates. More will find its way here, little by little.
+      zh: 树屋加入了三语 Profile、摄影作品页面和新鲜事栏目，之后会慢慢把内容补上。
+    url: /profile/
