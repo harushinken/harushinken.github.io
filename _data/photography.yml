@@ -1,1 +1,145 @@
-photos: []
+photos:
+  - image: /assets/img/photography/2026-tianjin.jpg
+    thumbnail: /assets/img/photography/2026-tianjin-thumb.jpg
+    width: 716
+    height: 1080
+    title:
+      ja: "2026-天津"
+      en: "2026-Tianjin"
+      zh: "2026-天津"
+  - image: /assets/img/photography/2026-bangkok.jpg
+    thumbnail: /assets/img/photography/2026-bangkok-thumb.jpg
+    width: 778
+    height: 1080
+    title:
+      ja: "2026-バンコク"
+      en: "2026-Bangkok"
+      zh: "2026-曼谷"
+  - image: /assets/img/photography/2026-bangkok-1.jpg
+    thumbnail: /assets/img/photography/2026-bangkok-1-thumb.jpg
+    width: 803
+    height: 1080
+    title:
+      ja: "2026-バンコク"
+      en: "2026-Bangkok"
+      zh: "2026-曼谷"
+  - image: /assets/img/photography/2026-bangkok-2.jpg
+    thumbnail: /assets/img/photography/2026-bangkok-2-thumb.jpg
+    width: 810
+    height: 1080
+    title:
+      ja: "2026-バンコク"
+      en: "2026-Bangkok"
+      zh: "2026-曼谷"
+  - image: /assets/img/photography/2026-tamsui.jpg
+    thumbnail: /assets/img/photography/2026-tamsui-thumb.jpg
+    width: 772
+    height: 1080
+    title:
+      ja: "2026-淡水"
+      en: "2026-Tamsui"
+      zh: "2026-淡水"
+  - image: /assets/img/photography/2026-chiang-mai.jpg
+    thumbnail: /assets/img/photography/2026-chiang-mai-thumb.jpg
+    width: 778
+    height: 1080
+    title:
+      ja: "2026-チェンマイ"
+      en: "2026-Chiang Mai"
+      zh: "2026-清迈"
+  - image: /assets/img/photography/2026-naples-1.jpg
+    thumbnail: /assets/img/photography/2026-naples-1-thumb.jpg
+    width: 810
+    height: 1080
+    title:
+      ja: "2026-ナポリ"
+      en: "2026-Naples"
+      zh: "2026-那不勒斯"
+  - image: /assets/img/photography/2026-naples-2.jpg
+    thumbnail: /assets/img/photography/2026-naples-2-thumb.jpg
+    width: 810
+    height: 1080
+    title:
+      ja: "2026-ナポリ"
+      en: "2026-Naples"
+      zh: "2026-那不勒斯"
+  - image: /assets/img/photography/2025-beijing.jpg
+    thumbnail: /assets/img/photography/2025-beijing-thumb.jpg
+    width: 716
+    height: 1080
+    title:
+      ja: "2025-北京"
+      en: "2025-Beijing"
+      zh: "2025-北京"
+  - image: /assets/img/photography/2025-beijing-1.jpg
+    thumbnail: /assets/img/photography/2025-beijing-1-thumb.jpg
+    width: 716
+    height: 1080
+    title:
+      ja: "2025-北京"
+      en: "2025-Beijing"
+      zh: "2025-北京"
+  - image: /assets/img/photography/2025-chiba.jpg
+    thumbnail: /assets/img/photography/2025-chiba-thumb.jpg
+    width: 716
+    height: 1080
+    title:
+      ja: "2025-千葉"
+      en: "2025-Chiba"
+      zh: "2025-千叶"
+  - image: /assets/img/photography/2025-osaka.jpg
+    thumbnail: /assets/img/photography/2025-osaka-thumb.jpg
+    width: 716
+    height: 1080
+    title:
+      ja: "2025-大阪"
+      en: "2025-Osaka"
+      zh: "2025-大阪"
+  - image: /assets/img/photography/2025-hong-kong.jpg
+    thumbnail: /assets/img/photography/2025-hong-kong-thumb.jpg
+    width: 810
+    height: 1080
+    title:
+      ja: "2025-香港"
+      en: "2025-Hong Kong"
+      zh: "2025-香港"
+  - image: /assets/img/photography/2021-ochanomizu.jpg
+    thumbnail: /assets/img/photography/2021-ochanomizu-thumb.jpg
+    width: 720
+    height: 1080
+    title:
+      ja: "2021-お茶の水"
+      en: "2021-Ochanomizu"
+      zh: "2021-御茶水"
+  - image: /assets/img/photography/2021-akihabara-1.jpg
+    thumbnail: /assets/img/photography/2021-akihabara-1-thumb.jpg
+    width: 720
+    height: 1080
+    title:
+      ja: "2021-秋葉原"
+      en: "2021-Akihabara"
+      zh: "2021-秋叶原"
+  - image: /assets/img/photography/2021-akihabara-2.jpg
+    thumbnail: /assets/img/photography/2021-akihabara-2-thumb.jpg
+    width: 705
+    height: 1080
+    title:
+      ja: "2021-秋葉原"
+      en: "2021-Akihabara"
+      zh: "2021-秋叶原"
+  - image: /assets/img/photography/2021-kamakura-1.jpg
+    thumbnail: /assets/img/photography/2021-kamakura-1-thumb.jpg
+    width: 648
+    height: 1080
+    title:
+      ja: "2021-鎌倉"
+      en: "2021-Kamakura"
+      zh: "2021-镰仓"
+  - image: /assets/img/photography/2021-kamakura-2.jpg
+    thumbnail: /assets/img/photography/2021-kamakura-2-thumb.jpg
+    width: 648
+    height: 1080
+    title:
+      ja: "2021-鎌倉"
+      en: "2021-Kamakura"
+      zh: "2021-镰仓"

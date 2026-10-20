@@ -24,7 +24,7 @@ nav_order: 3
   {% assign photo_title = photo.title[locale] | default: photo.title.en | default: photo.title.zh %}
   {% assign photo_alt = photo.alt[locale] | default: photo_title %}
   <figure class="personal-photo">
-<a href="{{ photo.image | relative_url }}" target="_blank" rel="noopener"><img src="{{ photo.image | relative_url }}" alt="{{ photo_alt | escape }}" loading="lazy" decoding="async"></a>
+<a href="{{ photo.image | relative_url }}" target="_blank" rel="noopener"><img src="{{ photo.thumbnail | default: photo.image | relative_url }}" alt="{{ photo_alt | escape }}" {% if photo.width and photo.height %}width="{{ photo.width }}" height="{{ photo.height }}"{% endif %} loading="lazy" decoding="async"></a>
 <figcaption><h2>{{ photo_title | escape }}</h2>{% if photo.location %}<p class="personal-muted">{{ photo.location | escape }}{% if photo.date %} · {{ photo.date | date: '%Y.%m.%d' }}{% endif %}</p>{% elsif photo.date %}<p class="personal-muted">{{ photo.date | date: '%Y.%m.%d' }}</p>{% endif %}{% if photo.caption[locale] %}<p>{{ photo.caption[locale] | escape }}</p>{% endif %}<a class="personal-text-link" href="{{ photo.image | relative_url }}" target="_blank" rel="noopener">{{ t.photos.view_full }}</a></figcaption>
   </figure>
 {% endfor %}

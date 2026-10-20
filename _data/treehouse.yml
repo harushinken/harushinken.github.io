@@ -104,7 +104,7 @@ ja:
     intro: 日常の光や、旅先でふと足を止めた景色。写真を少しずつ集めていきます。
     empty_title: 最初の一枚を、もう少しだけ。
     empty_body: 写真を選んでいるところです。準備ができたら、ここに並べていきます。
-    view_full: 元のサイズで見る ↗
+    view_full: 拡大して見る ↗
   news:
     intro: 研究のこと、サイトの更新、日々の小さな出来事。新しいことを、ここに少しずつ。
     empty: 新しいお知らせは、また近いうちに。
@@ -224,7 +224,7 @@ en:
     intro: Everyday light, and scenes that made me stop for a moment on a journey. A collection that will grow, little by little.
     empty_title: The first photographs are on their way.
     empty_body: I’m choosing the pictures I’d like to share. They’ll find their place here soon.
-    view_full: View full size ↗
+    view_full: View larger ↗
   news:
     intro: Research, site updates, and small moments from everyday life. A little record of what’s new.
     empty: More updates will be here soon.
@@ -337,7 +337,7 @@ zh:
     intro: 日常里的光，旅行中让人停下脚步的风景。这里会慢慢收集我的摄影作品。
     empty_title: 第一批照片，正在路上。
     empty_body: 正在挑选想要分享的照片，准备好之后会放在这里。
-    view_full: 查看原图 ↗
+    view_full: 查看大图 ↗
   news:
     intro: 研究进展、网站更新，还有生活里的一些小事。新鲜事就慢慢记在这里。
     empty: 新的消息，之后慢慢补上。
