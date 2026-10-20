@@ -252,28 +252,38 @@ body .post-header {
   font-weight: 500;
 }
 
-.personal-photo-empty {
-  margin: 3rem 0;
-  padding: 4rem 2rem;
-  text-align: center;
-  background: var(--personal-card);
-  border: 1px solid var(--personal-line);
-  border-radius: 18px;
+.personal-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 2.5rem 1.5rem;
+  padding: 2rem 0;
 }
 
-.personal-photo-empty svg {
-  color: var(--personal-accent);
-  margin-bottom: 1.5rem;
+.personal-photo {
+  margin: 0;
+  min-width: 0;
 }
 
-.personal-photo-empty h2 {
-  font-size: 1.5rem;
+.personal-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.personal-photo figcaption {
+  padding: 1rem 0;
+}
+
+.personal-photo h2 {
+  font-size: 1.2rem;
   font-weight: 500;
+  margin: 0 0 0.5rem;
 }
 
-.personal-photo-empty p {
-  color: var(--personal-muted);
-  margin-bottom: 0;
+.personal-photo p {
+  font-size: 0.9rem;
 }
 
 body .post-title,
@@ -517,10 +527,17 @@ body footer {
   color: var(--personal-muted);
 }
 
+@media (min-width: 701px) and (max-width: 1000px) {
+  .personal-photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 700px) {
   .personal-timeline > li,
   .personal-news-item,
-  .personal-interest-grid {
+  .personal-interest-grid,
+  .personal-photo-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
