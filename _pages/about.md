@@ -31,7 +31,7 @@ nav: false
   </div>
   <figure class="personal-portrait">
     <img src="{{ '/assets/img/shinken.jpg' | relative_url }}" alt="{{ t.ui.portrait }}" width="420" height="480" fetchpriority="high">
-    <figcaption>Jinqian Zhang / @harushinken</figcaption>
+    <figcaption>{{ t.profile.name | escape }} / @harushinken</figcaption>
   </figure>
   <figure class="personal-quote">
     <blockquote><p>“{{ t.home.quote.text | escape }}”</p></blockquote>

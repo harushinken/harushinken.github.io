@@ -15,7 +15,7 @@ ja:
     previous: ← 前のページ
     next: 次のページ →
     pagination: 記事のページ切り替え
-    portrait: Jinqian の写真
+    portrait: 張 晋騫の写真
     download: CV をダウンロード（PDF） ↓
     source: ソースコードを見る
     empty_posts: 最初の記事を準備しています。
@@ -43,7 +43,7 @@ ja:
       title: 写真
       description: 歩いた先で出会った景色を、写真に。
   home:
-    greeting: こんにちは、Jinqian です。
+    greeting: こんにちは、張 晋騫（ちょう　しんけん）です。
     eyebrow: A LITTLE TREEHOUSE ON THE INTERNET
     lead: つくったもの、ふと浮かんだ考え、そしてこれまでの歩みを、ここに置いています。
     intro: かしこまった自己紹介というより、私を知ってもらうための小さな窓のような場所です。写真や記事、これまでの経験から、気になるものをのぞいてみてください。
@@ -75,9 +75,9 @@ ja:
         内容が増えるにつれて、サイトも少しずつ育っていくはず。まずは記録を始めて、自分らしい形を見つけていきたいと思います。"
   profile:
     about: 私について
-    education: Education
-    research: Research interests
-    publications: Publications
+    education: 学歴
+    research: 研究分野
+    publications: 発表論文
     current_work: いま取り組んでいること
     skills: 好きなこと・できること
     sports: スポーツ
@@ -99,6 +99,7 @@ ja:
     cv: CV
     bio: 中国・遼寧省丹東市で生まれました。北朝鮮に隣接する、中国最大の国境都市です。国境のそばで育った経験から、この世界にある無数の可能性を、もっと知りたいと思うようになりました。
     status: PhD candidate in Information Science
+    name: 張 晋騫（ちょう　しんけん）
   photos:
     intro: 日常の光や、旅先でふと足を止めた景色。写真を少しずつ集めていきます。
     empty_title: 最初の一枚を、もう少しだけ。
@@ -127,7 +128,7 @@ en:
     previous: ← Previous
     next: Next →
     pagination: Blog pagination
-    portrait: A photo of Jinqian
+    portrait: A photo of Zhang Jinqian
     download: Download CV (PDF) ↓
     source: View the source code
     empty_posts: The first post is on its way.
@@ -155,11 +156,11 @@ en:
       title: Photography
       description: Scenes I’ve found along the way.
   home:
-    greeting: Hi, I’m Jinqian.
+    greeting: Hi, I’m Zhang Jinqian.
     eyebrow: A LITTLE TREEHOUSE ON THE INTERNET
     lead: A place for things I’ve made, thoughts I’ve jotted down, and the path I’ve taken so far.
-    intro: Think of this as a small window into my world rather than a formal introduction. Start with a photograph, a post, or a moment
-      from my background—whatever catches your eye.
+    intro: Think of this as a small window into my world rather than a formal introduction. Start with a photograph, a post, or a moment from
+      my background—whatever catches your eye.
     work_button: Explore my profile
     explore: Take your time. Have a look around.
     recent: Recent writing
@@ -167,10 +168,10 @@ en:
     photo_card: Scenes from everyday life and places along the way.
     profile_card: Background, research, and things I enjoy.
     quote:
-      text: I have experienced on my body and on my soul that I needed sin very much, I needed lust, the desire for possessions, vanity,
-        and needed the most shameful despair, in order to learn how to give up all resistance, in order to learn how to love the world, in
-        order to stop comparing it to some world I wished, I imagined, some kind of perfection I had made up, but to leave it as it is and
-        to love it and to enjoy being a part of it.
+      text: I have experienced on my body and on my soul that I needed sin very much, I needed lust, the desire for possessions, vanity, and needed
+        the most shameful despair, in order to learn how to give up all resistance, in order to learn how to love the world, in order to stop
+        comparing it to some world I wished, I imagined, some kind of perfection I had made up, but to leave it as it is and to love it and to
+        enjoy being a part of it.
       book: Siddhartha
       credit: Hermann Hesse · G. Olesch et al., 2001 · “Govinda”
       source_url: https://www.gutenberg.org/files/2500/2500-h/2500-h.htm
@@ -185,8 +186,8 @@ en:
       body: "This site is built with al-folio and hosted on GitHub Pages.
 
 
-        The home page is a welcome, Photography is for images, and Articles is for longer writing. Profile brings together my background,
-        research, and interests.
+        The home page is a welcome, Photography is for images, and Articles is for longer writing. Profile brings together my background, research,
+        and interests.
 
 
         The site will grow along with its contents. First, start keeping a record; then, gradually find a shape that feels right."
@@ -215,9 +216,10 @@ en:
       - Collecting unusual things
       - Photography
     cv: CV
-    bio: I was born in Dandong, Liaoning, China, the country’s largest border city, right next to North Korea. Growing up on a border made
-      me curious about the countless possibilities of living in this world, and that curiosity keeps me exploring.
+    bio: I was born in Dandong, Liaoning, China, the country’s largest border city, right next to North Korea. Growing up on a border made me
+      curious about the countless possibilities of living in this world, and that curiosity keeps me exploring.
     status: PhD candidate in Information Science
+    name: Zhang Jinqian
   photos:
     intro: Everyday light, and scenes that made me stop for a moment on a journey. A collection that will grow, little by little.
     empty_title: The first photographs are on their way.
@@ -246,7 +248,7 @@ zh:
     previous: ← 上一页
     next: 下一页 →
     pagination: 文章分页
-    portrait: Jinqian 的个人照片
+    portrait: 张 晋骞的个人照片
     download: 下载 CV（PDF） ↓
     source: 查看网站源码
     empty_posts: 还没有文章，第一篇正在路上。
@@ -274,7 +276,7 @@ zh:
       title: 摄影作品
       description: 把沿途遇到的风景，留在照片里。
   home:
-    greeting: 你好，我是 Jinqian。
+    greeting: 你好，我是张 晋骞。
     eyebrow: A LITTLE TREEHOUSE ON THE INTERNET
     lead: 这里放着我做过的事、随手写下的想法，以及一路走来的经历。
     intro: 比起一份正式的介绍，我更想把这里当作一扇窗。你可以从一张照片、一篇文章，或者一段经历开始认识我。
@@ -306,9 +308,9 @@ zh:
         网站也会随着内容慢慢生长。先开始记录，再慢慢找到自己的样子。"
   profile:
     about: 关于我
-    education: Education
-    research: Research interests
-    publications: Publications
+    education: 教育经历
+    research: 研究领域
+    publications: 发表论文
     current_work: 最近在做什么
     skills: 技能与兴趣
     sports: 运动
@@ -330,6 +332,7 @@ zh:
     cv: CV
     bio: 我出生在中国辽宁省丹东市。这里是中国最大的边境城市，紧靠朝鲜。从小的边境生活，让我不断地想要探索生活在这个世界中的无数种可能性。
     status: PhD candidate in Information Science
+    name: 张 晋骞
   photos:
     intro: 日常里的光，旅行中让人停下脚步的风景。这里会慢慢收集我的摄影作品。
     empty_title: 第一批照片，正在路上。

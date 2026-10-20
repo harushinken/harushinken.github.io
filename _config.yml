@@ -2,14 +2,14 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: "Jinqian Zhang"
+title: "Zhang Jinqian"
 first_name: "Jinqian"
 middle_name:
 last_name: "Zhang"
 contact_note: "也可以在 GitHub 找到我。"
-description: "Jinqian Zhang のツリーハウス。つくったもの、考えたこと、これまでの歩み。"
+description: "張 晋騫のツリーハウス。つくったもの、考えたこと、これまでの歩み。"
 footer_text: >
-  Jinqian Zhang · <span data-treehouse-ui="footer">好奇心を忘れず、少しずつ記録。</span><br>
+  <span data-treehouse-name>Zhang Jinqian</span> · <span data-treehouse-ui="footer">好奇心を忘れず、少しずつ記録。</span><br>
   Built with <a href="https://jekyllrb.com/">Jekyll</a> &amp;
   <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
 keywords: personal, portfolio, blog, Jinqian Zhang

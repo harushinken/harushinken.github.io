@@ -1,4 +1,4 @@
-name: Jinqian Zhang
+name: Zhang Jinqian
 status: PhD candidate in Information Science
 education:
   - period: 2024.04–present
@@ -9,6 +9,23 @@ education:
     degree: PhD studies in Information Science
     lab: Social Signal and Multimodal Interaction Laboratory (Okada Laboratory)
     lab_url: https://www.jaist.ac.jp/laboratory/aiw/okada.html
+    translations:
+      zh:
+        institution: 北陆先端科学技术大学院大学（JAIST）
+        location: 日本
+        school: 先端科学技术研究科
+        program: 先端科学技术专攻
+        degree: 博士在读（情报学）
+        lab: 社会与信号处理研究室（冈田研究室）
+        period: 2024.04–至今
+      ja:
+        institution: 北陸先端科学技術大学院大学（JAIST）
+        location: 日本
+        school: 先端科学技術研究科
+        program: 先端科学技術専攻
+        degree: 博士後期課程在学中（情報科学）
+        lab: 社会的信号処理・マルチモーダルインタラクション研究室（岡田研究室）
+        period: 2024.04–現在
   - period: 2022.04–2024.03
     institution: Japan Advanced Institute of Science and Technology (JAIST)
     location: Japan
@@ -17,15 +34,50 @@ education:
     degree: Master of Science in Information Science
     lab: Social Signal and Multimodal Interaction Laboratory (Okada Laboratory)
     lab_url: https://www.jaist.ac.jp/laboratory/aiw/okada.html
+    translations:
+      zh:
+        institution: 北陆先端科学技术大学院大学（JAIST）
+        location: 日本
+        school: 先端科学技术研究科
+        program: 先端科学技术专攻
+        degree: 情报学修士
+        lab: 社会与信号处理研究室（冈田研究室）
+      ja:
+        institution: 北陸先端科学技術大学院大学（JAIST）
+        location: 日本
+        school: 先端科学技術研究科
+        program: 先端科学技術専攻
+        degree: 修士（情報科学）
+        lab: 社会的信号処理・マルチモーダルインタラクション研究室（岡田研究室）
   - period: 2020.12–2022.03
     institution: Sun-A International Academy
     location: Shin-Koiwa, Tokyo, Japan
     degree: Japanese language studies
+    translations:
+      zh:
+        institution: Sun-A 国际学院
+        location: 日本东京都新小岩
+        degree: 日本语学习
+      ja:
+        institution: Sun-A国際学院
+        location: 東京都新小岩
+        degree: 日本語学習
   - period: 2016.09–2020.06
-    institution: Northeastern University
+    institution: Northeastern University (China)
     location: Shenyang, Liaoning, China
     school: School of Computer Science and Engineering
     degree: Bachelor’s degree in Computer Science and Technology
+    translations:
+      zh:
+        institution: 东北大学
+        location: 中国辽宁省沈阳市
+        school: 计算机科学与工程学院
+        degree: 计算机科学与技术专业 学士
+      ja:
+        institution: 東北大学（中国）
+        location: 中国・遼寧省瀋陽市
+        school: コンピュータ科学・工学学院
+        degree: 学士（コンピュータ科学・技術）
 research_interests:
   - Multimodal Interaction
   - Multimodal Machine Learning
@@ -34,17 +86,17 @@ research_interests:
 publications:
   - status: Published
     venue: HAI ’25
-    citation: Jinqian Zhang, Sixia Li, Candy Olivia Mawalim, and Shogo Okada. 2026. Multimodal Classification of Co-speech Gesture Pragmatic
-      Function in Storytelling. In Proceedings of the 13th International Conference on Human-Agent Interaction (HAI '25). Association for Computing
-      Machinery, New York, NY, USA, 312–320.
+    citation: Jinqian Zhang, Sixia Li, Candy Olivia Mawalim, and Shogo Okada. 2026. Multimodal Classification of Co-speech Gesture Pragmatic Function
+      in Storytelling. In Proceedings of the 13th International Conference on Human-Agent Interaction (HAI '25). Association for Computing Machinery,
+      New York, NY, USA, 312–320.
     doi: https://doi.org/10.1145/3765766.3765771
   - status: Published
     venue: ICMI ’26
     citation: "Jinqian Zhang, Sixia Li, Candy Olivia Mawalim, and Shogo Okada. 2026. From Detection to Mechanism Analysis: Interpretable Multimodal
-      Concept Interactions in Gesture Pragmatics. In Proceedings of the 28th International Conference On Multimodal Interaction (ICMI '26).
-      Association for Computing Machinery, New York, NY, USA, 705–714."
+      Concept Interactions in Gesture Pragmatics. In Proceedings of the 28th International Conference On Multimodal Interaction (ICMI '26). Association
+      for Computing Machinery, New York, NY, USA, 705–714."
     doi: https://doi.org/10.1145/3776574.3831183
   - status: Submitted
     venue: Journal submission
-    citation: Jinqian Zhang, Sixia Li, Candy Olivia Mawalim, and Shogo Okada. 2026. Pragmatic-function composition is selectively associated
-      with perceived confidence and fluency in storytelling. Submitted to a journal.
+    citation: Jinqian Zhang, Sixia Li, Candy Olivia Mawalim, and Shogo Okada. 2026. Pragmatic-function Composition is Selectively Associated with
+      Perceived Confidence and Fluency in Storytelling. Submitted to a journal.

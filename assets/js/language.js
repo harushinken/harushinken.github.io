@@ -9,7 +9,6 @@
   const supported = ["ja", "en", "zh"];
   const storageKey = "treehouse-language";
   const pageKey = control.dataset.treehousePage;
-  const siteName = "Jinqian Zhang";
   const articleSource = document.getElementById("treehouse-article");
   const articleTranslations = articleSource ? JSON.parse(articleSource.textContent) : null;
 
@@ -79,13 +78,18 @@
         if (title) title.textContent = metadata.title;
         if (description) description.textContent = metadata.description;
       }
-      document.title = `${metadata.title} · ${siteName}`;
+      document.title = `${metadata.title} · ${dictionary.profile.name}`;
       const description = document.querySelector('meta[name="description"]');
       if (description) description.content = metadata.description;
       const articleTag = document.querySelector("[data-article-tag]");
       if (articleTag) articleTag.textContent = metadata.tag ? `#${metadata.tag}` : "";
     }
 
+    document.querySelectorAll("[data-treehouse-name]").forEach((element) => {
+      element.textContent = dictionary.profile.name;
+    });
+    const brand = document.querySelector("#navbar .navbar-brand.title");
+    if (brand) brand.textContent = dictionary.profile.name;
     translateNavigation(dictionary);
     try {
       localStorage.setItem(storageKey, language);

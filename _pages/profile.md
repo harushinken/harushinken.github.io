@@ -18,20 +18,21 @@ nav_order: 1
 {% assign locale = language[0] %}{% assign t = language[1] %}
 <div data-language="{{ locale }}" lang="{{ t.html_lang }}" {% unless locale == 'ja' %}hidden{% endunless %}>
 <section class="personal-profile-intro" aria-label="{{ t.profile.about }}">
-  <p class="personal-eyebrow">Jinqian Zhang</p>
+  <p class="personal-eyebrow">{{ t.profile.name | escape }}</p>
   <p class="personal-role" lang="en">{{ site.data.profile.status }}</p>
   <p class="personal-lead">{{ t.profile.bio }}</p>
 </section>
 <section class="personal-section">
   <h2>{{ t.profile.education }}</h2>
-  <ol class="personal-timeline" lang="en">
+  <ol class="personal-timeline">
   {% for education in site.data.profile.education %}
-<li><p class="personal-timeline-date">{{ education.period }}</p><div>
-<h3>{{ education.institution | escape }}</h3>
-<p class="personal-degree">{{ education.degree | escape }}</p>
-      {% if education.school %}<p>{{ education.school | escape }}{% if education.program %}<br>{{ education.program | escape }}{% endif %}</p>{% endif %}
-      {% if education.lab %}<p><a href="{{ education.lab_url }}">{{ education.lab | escape }}</a></p>{% endif %}
-<p class="personal-muted">{{ education.location | escape }}</p>
+{% assign entry = education.translations[locale] | default: education %}
+<li><p class="personal-timeline-date">{{ entry.period | default: education.period | escape }}</p><div>
+<h3>{{ entry.institution | default: education.institution | escape }}</h3>
+<p class="personal-degree">{{ entry.degree | default: education.degree | escape }}</p>
+      {% if education.school %}<p>{{ entry.school | default: education.school | escape }}{% if education.program %}<br>{{ entry.program | default: education.program | escape }}{% endif %}</p>{% endif %}
+      {% if education.lab %}<p><a href="{{ education.lab_url }}">{{ entry.lab | default: education.lab | escape }}</a></p>{% endif %}
+<p class="personal-muted">{{ entry.location | default: education.location | escape }}</p>
 </div></li>
   {% endfor %}
   </ol>
