@@ -303,7 +303,7 @@ defaults:
   - scope:
       path: ""
     values:
-      _styles: '@import url("/assets/css/personal.css");'
+      _styles: '@import url("/assets/css/personal.css?v=editorial-20261022-2");'
   - scope:
       path: "assets"
     values:

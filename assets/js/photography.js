@@ -10,7 +10,7 @@
     function arrange() {
       frame = 0;
       if (!grid.getBoundingClientRect().width) return;
-      grid.dataset.gridReady = "true";
+      grid.classList.add("is-arranged");
       const styles = getComputedStyle(grid);
       const rowHeight = parseFloat(styles.gridAutoRows);
       const gap = parseFloat(styles.rowGap);

@@ -14,7 +14,7 @@ nav_order: 3
 </div>
 <script type="application/json" id="treehouse-translations">{{ site.data.treehouse | jsonify | replace: '<', '\u003c' }}</script>
 <script src="{{ '/assets/js/language.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/photography.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/photography.js' | relative_url }}?v=editorial-20261022-2" defer></script>
 {% for language in site.data.treehouse %}
 {% assign locale = language[0] %}{% assign t = language[1] %}
 <div data-language="{{ locale }}" lang="{{ t.html_lang }}" {% unless locale == 'ja' %}hidden{% endunless %}>

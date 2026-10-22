@@ -283,7 +283,7 @@ body .post-header {
   grid-column: span 6;
 }
 
-.personal-photo-grid[data-grid-ready] {
+.personal-photo-grid.is-arranged {
   grid-auto-rows: 8px;
   row-gap: 12px;
 }
