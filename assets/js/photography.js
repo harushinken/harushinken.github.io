@@ -4,6 +4,7 @@
   if (!("ResizeObserver" in window)) return;
 
   document.querySelectorAll(".personal-photo-grid--editorial").forEach((grid) => {
+    grid.closest(".container")?.classList.add("personal-photography-container");
     let frame = 0;
     const photos = Array.from(grid.querySelectorAll(".personal-photo"));
 
