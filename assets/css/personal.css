@@ -283,6 +283,11 @@ body .post-header {
   grid-column: span 6;
 }
 
+.personal-photo-grid.is-arranged {
+  grid-auto-rows: 8px;
+  row-gap: 12px;
+}
+
 .personal-photo > a {
   display: block;
   overflow: hidden;
