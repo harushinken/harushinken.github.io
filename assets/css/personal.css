@@ -256,14 +256,14 @@ body .post-header {
 .personal-photo-grid {
   display: grid;
   grid-auto-flow: row dense;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-columns: repeat(16, minmax(0, 1fr));
   align-items: start;
   gap: 2rem 1.25rem;
   padding: 1.5rem 0 3rem;
 }
 
 .personal-photo {
-  grid-column: span 3;
+  grid-column: span 4;
   margin: 0;
   min-width: 0;
 }
@@ -272,15 +272,22 @@ body .post-header {
   grid-column: span 5;
 }
 
+.personal-photo--slot-1 {
+  grid-column: span 3;
+}
+
 .personal-photo--slot-2,
 .personal-photo--slot-6,
 .personal-photo--slot-7 {
   grid-column: span 4;
 }
 
-.personal-photo--slot-5,
-.personal-photo--landscape {
+.personal-photo--slot-5 {
   grid-column: span 6;
+}
+
+.personal-photo--landscape {
+  grid-column: span 8;
 }
 
 .personal-photo-grid.is-arranged {
@@ -577,6 +584,13 @@ body footer {
   border-top: 1px solid var(--personal-line);
   background: var(--personal-paper);
   color: var(--personal-muted);
+}
+
+@media (min-width: 901px) {
+  body .container.personal-photography-container {
+    width: calc(100% - clamp(40px, 6vw, 120px));
+    max-width: 1760px;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
