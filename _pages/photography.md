@@ -14,18 +14,22 @@ nav_order: 3
 </div>
 <script type="application/json" id="treehouse-translations">{{ site.data.treehouse | jsonify | replace: '<', '\u003c' }}</script>
 <script src="{{ '/assets/js/language.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/photography.js' | relative_url }}" defer></script>
 {% for language in site.data.treehouse %}
 {% assign locale = language[0] %}{% assign t = language[1] %}
 <div data-language="{{ locale }}" lang="{{ t.html_lang }}" {% unless locale == 'ja' %}hidden{% endunless %}>
 <p class="personal-lead">{{ t.photos.intro }}</p>
 {% if site.data.photography.photos.size > 0 %}
-<div class="personal-photo-grid">
+<div class="personal-photo-grid personal-photo-grid--editorial">
 {% for photo in site.data.photography.photos %}
   {% assign photo_title = photo.title[locale] | default: photo.title.en | default: photo.title.zh %}
   {% assign photo_alt = photo.alt[locale] | default: photo_title %}
-  <figure class="personal-photo">
+  {% assign photo_slot = forloop.index0 | modulo: 8 %}
+  {% assign photo_shape = 'portrait' %}
+  {% if photo.width > photo.height %}{% assign photo_shape = 'landscape' %}{% endif %}
+  <figure class="personal-photo personal-photo--{{ photo_shape }} personal-photo--slot-{{ photo_slot }}">
 <a href="{{ photo.image | relative_url }}" target="_blank" rel="noopener"><img src="{{ photo.thumbnail | default: photo.image | relative_url }}" alt="{{ photo_alt | escape }}" {% if photo.width and photo.height %}width="{{ photo.width }}" height="{{ photo.height }}"{% endif %} loading="lazy" decoding="async"></a>
-<figcaption><h2>{{ photo_title | escape }}</h2>{% if photo.location %}<p class="personal-muted">{{ photo.location | escape }}{% if photo.date %} · {{ photo.date | date: '%Y.%m.%d' }}{% endif %}</p>{% elsif photo.date %}<p class="personal-muted">{{ photo.date | date: '%Y.%m.%d' }}</p>{% endif %}{% if photo.caption[locale] %}<p>{{ photo.caption[locale] | escape }}</p>{% endif %}<a class="personal-text-link" href="{{ photo.image | relative_url }}" target="_blank" rel="noopener">{{ t.photos.view_full }}</a></figcaption>
+<figcaption><span class="personal-photo-index" aria-hidden="true">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span><h2>{{ photo_title | escape }}</h2>{% if photo.location %}<p class="personal-muted">{{ photo.location | escape }}{% if photo.date %} · {{ photo.date | date: '%Y.%m.%d' }}{% endif %}</p>{% elsif photo.date %}<p class="personal-muted">{{ photo.date | date: '%Y.%m.%d' }}</p>{% endif %}{% if photo.caption[locale] %}<p>{{ photo.caption[locale] | escape }}</p>{% endif %}<a class="personal-text-link" href="{{ photo.image | relative_url }}" target="_blank" rel="noopener">{{ t.photos.view_full }}</a></figcaption>
   </figure>
 {% endfor %}
 </div>
